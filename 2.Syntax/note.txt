@@ -1,0 +1,60 @@
+How to use the downloaded files
+
+1) Run "npm install" or "yarn install" in the extracted folder
+2) Run "npm start" or "yarn start" to view the project
+
+Compare my code to yours to solve issues you might encounter. You may also copy the content of src/ into your own project's src/ folder to use your project setup (which might've been created with a different create-react-app version) and still use my code.
+
+
+- Notes
+
+	Create Project
+	npx create-react-app
+
+	Folder Structure
+	public -> html 
+	source -> business logic 
+	
+	Components
+	Person Component
+	rcc tab -> Class Component
+	rfc tab -> Functional Component
+	rafc tab -> Arrow Functional Component
+ 
+	JSX
+	HTML in javascript
+
+
+	Props 
+	App.js and Person component
+	External data passed into component
+	<Person name={this.state.persons[2].name} age={this.state.persons[2].age} />
+
+
+	State
+	App.js and Person component
+	Internal data in component
+	Can be passed into props
+	Use set state to change component state
+
+	 state = {
+		persons: [
+		{ name: 'Max', age: 28 },
+		{ name: 'Manu', age: 29 },
+		{ name: 'Stephanie', age: 26 }
+		],
+		otherState: 'some other value'
+	}
+
+	<button style={style} onClick={() => this.switchNameHandler('Maximilian!!')}>Switch Name</button>
+
+	switchNameHandler = (newName) => {
+    // console.log('Was clicked!');
+    // DON'T DO THIS: this.state.persons[0].name = 'Maximilian';
+    this.setState( {
+      persons: [
+        { name: newName, age: 28 },
+        { name: 'Manu', age: 29 },
+        { name: 'Stephanie', age: 27 }
+      ]
+    } )

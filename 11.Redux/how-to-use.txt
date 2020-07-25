@@ -1,0 +1,21 @@
+How to use the downloaded files
+
+1) Run "npm install" in the extracted folder
+2) Run "npm start" to view the project
+
+Compare my code to yours to solve issues you might encounter. You may also copy the content of src/ into your own project's src/ folder to use your project setup (which might've been created with a different create-react-app version) and still use my code.
+
+
+- Redux
+
+Central store holds state
+Connect and MapStateToProps gives state to component
+
+Reducer changes state
+Action on front end go to reducer which changes state 
+Connect and MapDispatchToProps gives actions to component
+
+
+1. Create store and add it to app with provider
+2. Create reducers and actions
+3. Connect state and actions with components with connect function

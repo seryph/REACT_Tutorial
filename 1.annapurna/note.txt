@@ -1,0 +1,13 @@
+
+- React
+A javascript library for building UI's
+
+
+Why React?
+Helps manage UI state
+Focus on business logic
+Huge ecosystem, so lots of help
+Super popular for jobs
+Good for Web Apps and single page apps
+
+
